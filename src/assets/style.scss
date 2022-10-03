@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General */
+
+h1, h2, h3 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+
+header {
+  background-color: #222222;
+  @apply py-5;
+
+  h1 {
+    @apply text-fuchsia-300;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+}
+
+body {
+  @apply text-base;
+  @apply bg-zinc-800;
+  @apply text-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  @apply font-bold py-2 px-4 rounded text-white;
+}
+
+.btn-fuchsia {
+  @apply bg-fuchsia-500;
+}
+
+.btn-dark-fuchsia {
+  @apply bg-fuchsia-800;
+}
+
+.btn-dark-fuchsia:active, .btn-fuchsia:active {
+  @apply bg-fuchsia-600;
+}
