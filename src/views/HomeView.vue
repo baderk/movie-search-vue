@@ -54,11 +54,11 @@ const searchMovie = () => {
         v-for="movie in moviesList"
         :key="movie.imdbID"
       >
-        <img :src="movie.Poster" />
         <RouterLink
           class="hover:underline font-semibold"
           :to="'/movie/' + movie.imdbID"
         >
+          <img :src="movie.Poster" />
           {{ movie.Title }}
         </RouterLink>
         <p class="text-slate-500">{{ movie.Year }}</p>
